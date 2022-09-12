@@ -109,6 +109,7 @@ input::placeholder {
     margin-top: 2vw;
     height: 15vw;
     width: 20vw;
+    cursor: pointer;
 }
 .portfolio-image-radius{
     border-radius: 3%;
@@ -161,6 +162,7 @@ input::placeholder {
     border-style: solid;
     border-color: white;
     border-radius: 5%;
+    cursor: pointer;
 }
 .about-download-btn>div:first-child{
     width: 2vw;
@@ -218,6 +220,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -265,6 +268,7 @@ input::placeholder {
     border-radius: 50%;
     border-color: white;
     border-style: solid;
+    cursor: pointer;
 }
 .footer-startBootstrap{
     color: #1abc9c;
