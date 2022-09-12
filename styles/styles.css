@@ -287,12 +287,19 @@ input::placeholder {
     justify-content: center;   
     color: white;
     background-color:#1a252f;
-    height: 3.5vw;
+    height: 5.5vw;
     align-items: center;
     font-size: 1vw;
+}
+.copyright-text{
+    font-size: 0.9vw;
+    font-weight: normal;
 }
 
 /* Utilises */
 .container{
     width: 100%;
+}
+.margin-top{
+    margin-top: 3vw;
 }
