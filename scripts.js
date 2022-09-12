@@ -47,7 +47,8 @@ let checkEntries = (e) =>{
         if((array_number[1].startsWith('3') && array_number[1].length==7) ||
          (!array_number[1].startsWith('3') && array_number[1].length==8)){
             valid_number=true;
-    }}
+        }
+    }
     if(input_phone_number.value==''){
         input_phone_number_exception.innerText='Required*';
     }else if(!valid_number){
