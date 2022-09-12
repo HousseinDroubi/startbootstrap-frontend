@@ -279,6 +279,7 @@ input::placeholder {
     background-color:#1a252f;
     height: 3.5vw;
     align-items: center;
+    font-size: 1vw;
 }
 
 /* Utilises */
