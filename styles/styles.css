@@ -71,6 +71,42 @@ img{
 .hero-container>div:last-child{
     margin-bottom: 3vw;
 }
+/* Portfolio */
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.portfolio>div{
+    margin-top: 1vw;
+}
+.portfolio>div:first-child{
+    margin-top: 3vw;
+}
+.portfolio>div:last-child{
+    margin-bottom: 5vw;
+}
+.portfolio-paragraph{
+    font-size: 2.5vw;
+    color: #2c3e50;
+}
+.portfolio-images{
+    justify-content: center;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.portfolio-images>div{
+    margin-left: 2vw;
+    margin-top: 2vw;
+    height: 15vw;
+    width: 20vw;
+}
+.portfolio-image-radius{
+    border-radius: 3%;
+}
 /* Utilises */
 .container{
     width: 100%;
