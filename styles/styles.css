@@ -41,13 +41,40 @@ img{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .nav-bar-list>li{
-    margin-left: 1vw;
+    margin-left: 1.5vw;
 }
 .nav-bar-list>li:first-child{
     margin-left: 0vw;
 }
+/* Hero container */
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-container-paragraph{
+    color: white;
+    font-size: 4vw;
+}
+.hero-container-description{
+    color: white;
+    font-size: 1.2vw;
+    font-weight: normal;
+    font-family:sans-serif;
+}
+.hero-container>div{
+    margin-top: 1vw;
+}
+.hero-container>div:first-child{
+    margin-top: 4vw;
+}
+.hero-container>div:last-child{
+    margin-bottom: 3vw;
+}
 /* Utilises */
-
+.container{
+    width: 100%;
+}
 /* color{
     #2c3e50
     1abc9c
