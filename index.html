@@ -75,15 +75,19 @@
             <div><p>CONTACT ME</p></div>
             <div><img src="./images/star_blue.png" alt="star_blue"></div>
             <div class="contact-details">
-                <div><input type="text" placeholder="Full name" class="contact-field"/></div>
+                <div><input type="text" placeholder="Full name" class="contact-field" id="input_full_name"/></div>
                 <hr>
-                <div><input type="email" placeholder="Email address" class="contact-field"/></div>
+                <p id="input_full_name_exception"></p>
+                <div><input type="email" placeholder="Email address" class="contact-field" id="input_email"/></div>
                 <hr>
-                <div><input type="number" placeholder="Phone number" class="contact-field"/></div>
+                <p id="input_email_exception"></p>
+                <div><input type="tel" placeholder="Phone number" class="contact-field" id="input_phone_number"/></div>
                 <hr>
-                <div><input type="text" placeholder="Message" class="contact-field"/></div>
+                <p id="input_phone_number_exception"></p>
+                <div><input type="text" placeholder="Message" class="contact-field" id="input_message"/></div>
                 <hr>
-                <div><button class="contact-btn-send">Send</button></div>
+                <p id="input_message_exception"></p>
+                <div><button class="contact-btn-send" id="btn_send">Send</button></div>
             </div>
         </section>
     <!-- End contact -->
