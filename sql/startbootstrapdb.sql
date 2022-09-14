@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 14, 2022 at 08:42 AM
+-- Generation Time: Sep 14, 2022 at 09:06 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -42,7 +42,8 @@ CREATE TABLE `form` (
 
 INSERT INTO `form` (`id`, `full_name`, `email`, `phone_number`, `message`) VALUES
 (1, 'Houssein Droubi', 'housseinalialdroubi@gmail.com', '+96171638062', 'Hello This is the first message'),
-(2, 'Ali', '@ali', '@96103123456', 'Hi from postman');
+(2, 'Ali', '@ali', '@96103123456', 'Hi from postman'),
+(3, 'Mouhammad', 'Mouhamad@gmail.com', '+96171638062', 'Hello this is a text Hello this is a text Hello this is a text Hello this is a text Hello this is a text Hello this is a text Hello this is a text Hello this is a text Hello this is a textHello this i');
 
 --
 -- Indexes for dumped tables
@@ -62,7 +63,7 @@ ALTER TABLE `form`
 -- AUTO_INCREMENT for table `form`
 --
 ALTER TABLE `form`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
