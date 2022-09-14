@@ -10,7 +10,7 @@ const input_email_exception = document.getElementById("input_email_exception");
 const input_phone_number_exception = document.getElementById("input_phone_number_exception");
 const input_message_exception = document.getElementById("input_message_exception");
 
-// Add color red for all exceptions
+// Add color red for all paragraphs used for exceptions
 input_full_name_exception.classList.add('red-text-color'); 
 input_email_exception.classList.add('red-text-color'); 
 input_phone_number_exception.classList.add('red-text-color'); 
@@ -117,5 +117,4 @@ let checkEntries = (e) =>{
         });
     }
 }
-
 btn_send.addEventListener("click",checkEntries);

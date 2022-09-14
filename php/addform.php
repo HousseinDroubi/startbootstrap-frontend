@@ -8,13 +8,15 @@ $full_name=$_POST['full_name'];
 $email=$_POST['email'];
 $phone_number=$_POST['phone_number'];
 $message=$_POST['message'];
+
 // Insert parameters into form table
 $query=$mysqli->prepare("INSERT INTO form(full_name,email,phone_number,message) values(?,?,?,?)");
 $query->bind_param("ssss",$full_name,$email,$phone_number,$message);
 $query->execute();
+
 // Return response as JSON
 $response=[];
 $response["success"]=true;
+// Print json response
 echo json_encode($response);
-
 ?>

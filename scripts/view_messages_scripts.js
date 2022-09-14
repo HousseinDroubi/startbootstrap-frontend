@@ -1,7 +1,6 @@
 const view_messages_paragraph=document.getElementById("view_messages_paragraph");
 // Fetch messages from DataBase
 let url = "http://localhost/startbootstrap-frontend/php/getmessages.php";
-
         fetch(url)
         .then(respone=>respone.json())
         .then(data=>{
