@@ -302,3 +302,10 @@ input::placeholder {
 .margin-top{
     margin-top: 3vw;
 }
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.underline-none{
+    text-decoration: none;
+}
