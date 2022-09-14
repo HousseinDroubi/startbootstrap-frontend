@@ -10,6 +10,12 @@ const input_email_exception = document.getElementById("input_email_exception");
 const input_phone_number_exception = document.getElementById("input_phone_number_exception");
 const input_message_exception = document.getElementById("input_message_exception");
 
+// Add color red for all exceptions
+input_full_name_exception.classList.add('red-text-color'); 
+input_email_exception.classList.add('red-text-color'); 
+input_phone_number_exception.classList.add('red-text-color'); 
+input_message_exception.classList.add('red-text-color');
+
 let checkEntries = (e) =>{
     // In order to see if all these 4 conditions are as required
     let count=0;
@@ -17,8 +23,7 @@ let checkEntries = (e) =>{
     input_full_name_exception.innerText='';
     input_email_exception.innerText='';
     input_phone_number_exception.innerText='';
-    input_message_exception.innerText='';
-
+    input_message_exception.innerText=''; 
     // Check full name if valid
     if(input_full_name.value==''){
         input_full_name_exception.innerText='Required*';
@@ -93,7 +98,23 @@ let checkEntries = (e) =>{
         }
         fetch(url,parameters)
         .then(respone=>respone.json())
-        .then(data=>console.log(data));
+        .then(data=>{
+            const send_form_result=document.getElementById('send_form_result');
+            try{
+                if(Object.values(data)[0]){
+                input_full_name.value='';
+                input_email.value='';
+                input_phone_number.value='';
+                input_message.value='';
+                send_form_result.classList.add("green-text-color");
+                send_form_result.innerText="Form has been sent successfully";
+                console.log('here');
+                }    
+            }catch(err){
+                send_form_result.classList.add('red-text-color');
+                send_form_result.innerText="Error: ".concat(err.message);
+            }
+        });
     }
 }
 
