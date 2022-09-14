@@ -9,7 +9,7 @@ let url = "http://localhost/startbootstrap-frontend/php/getmessages.php";
             for(let i=0;i<data.length;i++){
                 let p = document.createElement('p');
                 p.classList.add("message");
-                p.innerText="test";
+                p.innerText=Object.values(data)[i].message;
                 view_messages_paragraph.appendChild(p);
             }
         });
